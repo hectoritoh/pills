@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844EB92C1911511E00DF271F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB92B1911511E00DF271F /* UIKit.framework */; };
+		844EB92E1911511E00DF271F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB92D1911511E00DF271F /* Foundation.framework */; };
+		844EB9301911511E00DF271F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB92F1911511E00DF271F /* CoreGraphics.framework */; };
+		844EB9361911511E00DF271F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9341911511E00DF271F /* InfoPlist.strings */; };
+		844EB9381911511E00DF271F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB9371911511E00DF271F /* main.m */; };
+		844EB93C1911511E00DF271F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB93B1911511E00DF271F /* AppDelegate.m */; };
+		844EB93E1911511E00DF271F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB93D1911511E00DF271F /* Default.png */; };
+		844EB9401911511E00DF271F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB93F1911511E00DF271F /* Default@2x.png */; };
+		844EB9421911511E00DF271F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9411911511E00DF271F /* Default-568h@2x.png */; };
+		844EB9451911511E00DF271F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9431911511E00DF271F /* MainStoryboard.storyboard */; };
+		844EB9481911511E00DF271F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB9471911511E00DF271F /* ViewController.m */; };
+		844EB9501911511E00DF271F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB94F1911511E00DF271F /* SenTestingKit.framework */; };
+		844EB9511911511E00DF271F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB92B1911511E00DF271F /* UIKit.framework */; };
+		844EB9521911511E00DF271F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB92D1911511E00DF271F /* Foundation.framework */; };
+		844EB95A1911511E00DF271F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9581911511E00DF271F /* InfoPlist.strings */; };
+		844EB95D1911511E00DF271F /* TruthPillsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB95C1911511E00DF271F /* TruthPillsTests.m */; };
+		844EB96B191152D600DF271F /* 1-Icono-Creacion-de-Pill.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB966191152D600DF271F /* 1-Icono-Creacion-de-Pill.png */; };
+		844EB96D191152D600DF271F /* 3-Icono-Registror.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB968191152D600DF271F /* 3-Icono-Registror.png */; };
+		844EB96E191152D600DF271F /* 4-Icono-Eliminar.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB969191152D600DF271F /* 4-Icono-Eliminar.png */; };
+		844EB96F191152D600DF271F /* 5-Icono-Seguridad.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB96A191152D600DF271F /* 5-Icono-Seguridad.png */; };
+		844EB971191152EA00DF271F /* Icono-app-Iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB970191152EA00DF271F /* Icono-app-Iphone.png */; };
+		844EB97919115A2100DF271F /* ErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB97819115A2100DF271F /* ErrorViewController.m */; };
+		844EB9811911676A00DF271F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB9801911676A00DF271F /* LoginViewController.m */; };
+		844EB98319116D4500DF271F /* img-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB98219116D4500DF271F /* img-error.png */; };
+		844EB9891911763700DF271F /* logo-mccann.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9881911763700DF271F /* logo-mccann.png */; };
+		844EB98C191184BB00DF271F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EB98A1911849500DF271F /* QuartzCore.framework */; };
+		844EB9911911A13A00DF271F /* RegistroOkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB9901911A13A00DF271F /* RegistroOkViewController.m */; };
+		844EB9961911A84B00DF271F /* EliminadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB9951911A84B00DF271F /* EliminadoViewController.m */; };
+		844EB99B1911AD2D00DF271F /* PillBriefCreadoOkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB99A1911AD2D00DF271F /* PillBriefCreadoOkViewController.m */; };
+		844EB9A01911AFC500DF271F /* CtaModificadaOkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EB99F1911AFC500DF271F /* CtaModificadaOkViewController.m */; };
+		844EB9A21911B02F00DF271F /* msj-pillbriefcreado.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9A11911B02F00DF271F /* msj-pillbriefcreado.png */; };
+		844EB9A41911B04300DF271F /* msj-eliminado.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9A31911B04300DF271F /* msj-eliminado.png */; };
+		844EB9A61911B05B00DF271F /* msj-registrook.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9A51911B05B00DF271F /* msj-registrook.png */; };
+		844EB9A81911B0F300DF271F /* img-login.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9A71911B0F300DF271F /* img-login.png */; };
+		844EB9AA1911B11E00DF271F /* img-mensaje-cta-modificado.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EB9A91911B11D00DF271F /* img-mensaje-cta-modificado.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844EB9531911511E00DF271F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844EB9201911511E00DF271F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844EB9271911511E00DF271F;
+			remoteInfo = TruthPills;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844EB9281911511E00DF271F /* TruthPills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthPills.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		844EB92B1911511E00DF271F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		844EB92D1911511E00DF271F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		844EB92F1911511E00DF271F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		844EB9331911511E00DF271F /* TruthPills-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TruthPills-Info.plist"; sourceTree = "<group>"; };
+		844EB9351911511E00DF271F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844EB9371911511E00DF271F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		844EB9391911511E00DF271F /* TruthPills-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TruthPills-Prefix.pch"; sourceTree = "<group>"; };
+		844EB93A1911511E00DF271F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		844EB93B1911511E00DF271F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		844EB93D1911511E00DF271F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		844EB93F1911511E00DF271F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		844EB9411911511E00DF271F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		844EB9441911511E00DF271F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		844EB9461911511E00DF271F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		844EB9471911511E00DF271F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		844EB94E1911511E00DF271F /* TruthPillsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruthPillsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		844EB94F1911511E00DF271F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		844EB9571911511E00DF271F /* TruthPillsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TruthPillsTests-Info.plist"; sourceTree = "<group>"; };
+		844EB9591911511E00DF271F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844EB95B1911511E00DF271F /* TruthPillsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TruthPillsTests.h; sourceTree = "<group>"; };
+		844EB95C1911511E00DF271F /* TruthPillsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TruthPillsTests.m; sourceTree = "<group>"; };
+		844EB966191152D600DF271F /* 1-Icono-Creacion-de-Pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-Icono-Creacion-de-Pill.png"; sourceTree = "<group>"; };
+		844EB968191152D600DF271F /* 3-Icono-Registror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-Icono-Registror.png"; sourceTree = "<group>"; };
+		844EB969191152D600DF271F /* 4-Icono-Eliminar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-Icono-Eliminar.png"; sourceTree = "<group>"; };
+		844EB96A191152D600DF271F /* 5-Icono-Seguridad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-Icono-Seguridad.png"; sourceTree = "<group>"; };
+		844EB970191152EA00DF271F /* Icono-app-Iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icono-app-Iphone.png"; sourceTree = "<group>"; };
+		844EB97719115A2100DF271F /* ErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorViewController.h; sourceTree = "<group>"; };
+		844EB97819115A2100DF271F /* ErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorViewController.m; sourceTree = "<group>"; };
+		844EB97F1911676A00DF271F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		844EB9801911676A00DF271F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		844EB98219116D4500DF271F /* img-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-error.png"; sourceTree = "<group>"; };
+		844EB9881911763700DF271F /* logo-mccann.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-mccann.png"; sourceTree = "<group>"; };
+		844EB98A1911849500DF271F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		844EB98F1911A13A00DF271F /* RegistroOkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistroOkViewController.h; sourceTree = "<group>"; };
+		844EB9901911A13A00DF271F /* RegistroOkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistroOkViewController.m; sourceTree = "<group>"; };
+		844EB9941911A84B00DF271F /* EliminadoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EliminadoViewController.h; sourceTree = "<group>"; };
+		844EB9951911A84B00DF271F /* EliminadoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EliminadoViewController.m; sourceTree = "<group>"; };
+		844EB9991911AD2D00DF271F /* PillBriefCreadoOkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillBriefCreadoOkViewController.h; sourceTree = "<group>"; };
+		844EB99A1911AD2D00DF271F /* PillBriefCreadoOkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillBriefCreadoOkViewController.m; sourceTree = "<group>"; };
+		844EB99E1911AFC500DF271F /* CtaModificadaOkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CtaModificadaOkViewController.h; sourceTree = "<group>"; };
+		844EB99F1911AFC500DF271F /* CtaModificadaOkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CtaModificadaOkViewController.m; sourceTree = "<group>"; };
+		844EB9A11911B02F00DF271F /* msj-pillbriefcreado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msj-pillbriefcreado.png"; sourceTree = "<group>"; };
+		844EB9A31911B04300DF271F /* msj-eliminado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msj-eliminado.png"; sourceTree = "<group>"; };
+		844EB9A51911B05B00DF271F /* msj-registrook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msj-registrook.png"; sourceTree = "<group>"; };
+		844EB9A71911B0F300DF271F /* img-login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-login.png"; sourceTree = "<group>"; };
+		844EB9A91911B11D00DF271F /* img-mensaje-cta-modificado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-mensaje-cta-modificado.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844EB9251911511E00DF271F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EB98C191184BB00DF271F /* QuartzCore.framework in Frameworks */,
+				844EB92C1911511E00DF271F /* UIKit.framework in Frameworks */,
+				844EB92E1911511E00DF271F /* Foundation.framework in Frameworks */,
+				844EB9301911511E00DF271F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EB94A1911511E00DF271F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EB9501911511E00DF271F /* SenTestingKit.framework in Frameworks */,
+				844EB9511911511E00DF271F /* UIKit.framework in Frameworks */,
+				844EB9521911511E00DF271F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844EB91F1911511E00DF271F = {
+			isa = PBXGroup;
+			children = (
+				844EB970191152EA00DF271F /* Icono-app-Iphone.png */,
+				844EB966191152D600DF271F /* 1-Icono-Creacion-de-Pill.png */,
+				844EB98219116D4500DF271F /* img-error.png */,
+				844EB968191152D600DF271F /* 3-Icono-Registror.png */,
+				844EB9881911763700DF271F /* logo-mccann.png */,
+				844EB9A11911B02F00DF271F /* msj-pillbriefcreado.png */,
+				844EB9A71911B0F300DF271F /* img-login.png */,
+				844EB9A31911B04300DF271F /* msj-eliminado.png */,
+				844EB9A91911B11D00DF271F /* img-mensaje-cta-modificado.png */,
+				844EB9A51911B05B00DF271F /* msj-registrook.png */,
+				844EB969191152D600DF271F /* 4-Icono-Eliminar.png */,
+				844EB96A191152D600DF271F /* 5-Icono-Seguridad.png */,
+				844EB9311911511E00DF271F /* TruthPills */,
+				844EB9551911511E00DF271F /* TruthPillsTests */,
+				844EB92A1911511E00DF271F /* Frameworks */,
+				844EB9291911511E00DF271F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		844EB9291911511E00DF271F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844EB9281911511E00DF271F /* TruthPills.app */,
+				844EB94E1911511E00DF271F /* TruthPillsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844EB92A1911511E00DF271F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844EB98A1911849500DF271F /* QuartzCore.framework */,
+				844EB92B1911511E00DF271F /* UIKit.framework */,
+				844EB92D1911511E00DF271F /* Foundation.framework */,
+				844EB92F1911511E00DF271F /* CoreGraphics.framework */,
+				844EB94F1911511E00DF271F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844EB9311911511E00DF271F /* TruthPills */ = {
+			isa = PBXGroup;
+			children = (
+				844EB976191159EA00DF271F /* views */,
+				844EB93A1911511E00DF271F /* AppDelegate.h */,
+				844EB93B1911511E00DF271F /* AppDelegate.m */,
+				844EB9431911511E00DF271F /* MainStoryboard.storyboard */,
+				844EB9461911511E00DF271F /* ViewController.h */,
+				844EB9471911511E00DF271F /* ViewController.m */,
+				844EB9321911511E00DF271F /* Supporting Files */,
+			);
+			path = TruthPills;
+			sourceTree = "<group>";
+		};
+		844EB9321911511E00DF271F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844EB9331911511E00DF271F /* TruthPills-Info.plist */,
+				844EB9341911511E00DF271F /* InfoPlist.strings */,
+				844EB9371911511E00DF271F /* main.m */,
+				844EB9391911511E00DF271F /* TruthPills-Prefix.pch */,
+				844EB93D1911511E00DF271F /* Default.png */,
+				844EB93F1911511E00DF271F /* Default@2x.png */,
+				844EB9411911511E00DF271F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844EB9551911511E00DF271F /* TruthPillsTests */ = {
+			isa = PBXGroup;
+			children = (
+				844EB95B1911511E00DF271F /* TruthPillsTests.h */,
+				844EB95C1911511E00DF271F /* TruthPillsTests.m */,
+				844EB9561911511E00DF271F /* Supporting Files */,
+			);
+			path = TruthPillsTests;
+			sourceTree = "<group>";
+		};
+		844EB9561911511E00DF271F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844EB9571911511E00DF271F /* TruthPillsTests-Info.plist */,
+				844EB9581911511E00DF271F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844EB976191159EA00DF271F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				844EB97719115A2100DF271F /* ErrorViewController.h */,
+				844EB97819115A2100DF271F /* ErrorViewController.m */,
+				844EB97F1911676A00DF271F /* LoginViewController.h */,
+				844EB9801911676A00DF271F /* LoginViewController.m */,
+				844EB98F1911A13A00DF271F /* RegistroOkViewController.h */,
+				844EB9901911A13A00DF271F /* RegistroOkViewController.m */,
+				844EB9941911A84B00DF271F /* EliminadoViewController.h */,
+				844EB9951911A84B00DF271F /* EliminadoViewController.m */,
+				844EB9991911AD2D00DF271F /* PillBriefCreadoOkViewController.h */,
+				844EB99A1911AD2D00DF271F /* PillBriefCreadoOkViewController.m */,
+				844EB99E1911AFC500DF271F /* CtaModificadaOkViewController.h */,
+				844EB99F1911AFC500DF271F /* CtaModificadaOkViewController.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844EB9271911511E00DF271F /* TruthPills */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844EB9601911511E00DF271F /* Build configuration list for PBXNativeTarget "TruthPills" */;
+			buildPhases = (
+				844EB9241911511E00DF271F /* Sources */,
+				844EB9251911511E00DF271F /* Frameworks */,
+				844EB9261911511E00DF271F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruthPills;
+			productName = TruthPills;
+			productReference = 844EB9281911511E00DF271F /* TruthPills.app */;
+			productType = "com.apple.product-type.application";
+		};
+		844EB94D1911511E00DF271F /* TruthPillsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844EB9631911511E00DF271F /* Build configuration list for PBXNativeTarget "TruthPillsTests" */;
+			buildPhases = (
+				844EB9491911511E00DF271F /* Sources */,
+				844EB94A1911511E00DF271F /* Frameworks */,
+				844EB94B1911511E00DF271F /* Resources */,
+				844EB94C1911511E00DF271F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				844EB9541911511E00DF271F /* PBXTargetDependency */,
+			);
+			name = TruthPillsTests;
+			productName = TruthPillsTests;
+			productReference = 844EB94E1911511E00DF271F /* TruthPillsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844EB9201911511E00DF271F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Celmedia;
+			};
+			buildConfigurationList = 844EB9231911511E00DF271F /* Build configuration list for PBXProject "TruthPills" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 844EB91F1911511E00DF271F;
+			productRefGroup = 844EB9291911511E00DF271F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844EB9271911511E00DF271F /* TruthPills */,
+				844EB94D1911511E00DF271F /* TruthPillsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844EB9261911511E00DF271F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EB9361911511E00DF271F /* InfoPlist.strings in Resources */,
+				844EB93E1911511E00DF271F /* Default.png in Resources */,
+				844EB9401911511E00DF271F /* Default@2x.png in Resources */,
+				844EB9421911511E00DF271F /* Default-568h@2x.png in Resources */,
+				844EB9451911511E00DF271F /* MainStoryboard.storyboard in Resources */,
+				844EB96B191152D600DF271F /* 1-Icono-Creacion-de-Pill.png in Resources */,
+				844EB96D191152D600DF271F /* 3-Icono-Registror.png in Resources */,
+				844EB96E191152D600DF271F /* 4-Icono-Eliminar.png in Resources */,
+				844EB96F191152D600DF271F /* 5-Icono-Seguridad.png in Resources */,
+				844EB971191152EA00DF271F /* Icono-app-Iphone.png in Resources */,
+				844EB98319116D4500DF271F /* img-error.png in Resources */,
+				844EB9891911763700DF271F /* logo-mccann.png in Resources */,
+				844EB9A21911B02F00DF271F /* msj-pillbriefcreado.png in Resources */,
+				844EB9A41911B04300DF271F /* msj-eliminado.png in Resources */,
+				844EB9A61911B05B00DF271F /* msj-registrook.png in Resources */,
+				844EB9A81911B0F300DF271F /* img-login.png in Resources */,
+				844EB9AA1911B11E00DF271F /* img-mensaje-cta-modificado.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EB94B1911511E00DF271F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EB95A1911511E00DF271F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		844EB94C1911511E00DF271F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844EB9241911511E00DF271F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EB9381911511E00DF271F /* main.m in Sources */,
+				844EB93C1911511E00DF271F /* AppDelegate.m in Sources */,
+				844EB9481911511E00DF271F /* ViewController.m in Sources */,
+				844EB97919115A2100DF271F /* ErrorViewController.m in Sources */,
+				844EB9811911676A00DF271F /* LoginViewController.m in Sources */,
+				844EB9911911A13A00DF271F /* RegistroOkViewController.m in Sources */,
+				844EB9961911A84B00DF271F /* EliminadoViewController.m in Sources */,
+				844EB99B1911AD2D00DF271F /* PillBriefCreadoOkViewController.m in Sources */,
+				844EB9A01911AFC500DF271F /* CtaModificadaOkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EB9491911511E00DF271F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EB95D1911511E00DF271F /* TruthPillsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		844EB9541911511E00DF271F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844EB9271911511E00DF271F /* TruthPills */;
+			targetProxy = 844EB9531911511E00DF271F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844EB9341911511E00DF271F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844EB9351911511E00DF271F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		844EB9431911511E00DF271F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844EB9441911511E00DF271F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		844EB9581911511E00DF271F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844EB9591911511E00DF271F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844EB95E1911511E00DF271F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		844EB95F1911511E00DF271F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844EB9611911511E00DF271F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TruthPills/TruthPills-Prefix.pch";
+				INFOPLIST_FILE = "TruthPills/TruthPills-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		844EB9621911511E00DF271F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TruthPills/TruthPills-Prefix.pch";
+				INFOPLIST_FILE = "TruthPills/TruthPills-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		844EB9641911511E00DF271F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TruthPills.app/TruthPills";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TruthPills/TruthPills-Prefix.pch";
+				INFOPLIST_FILE = "TruthPillsTests/TruthPillsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		844EB9651911511E00DF271F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TruthPills.app/TruthPills";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TruthPills/TruthPills-Prefix.pch";
+				INFOPLIST_FILE = "TruthPillsTests/TruthPillsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844EB9231911511E00DF271F /* Build configuration list for PBXProject "TruthPills" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844EB95E1911511E00DF271F /* Debug */,
+				844EB95F1911511E00DF271F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844EB9601911511E00DF271F /* Build configuration list for PBXNativeTarget "TruthPills" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844EB9611911511E00DF271F /* Debug */,
+				844EB9621911511E00DF271F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		844EB9631911511E00DF271F /* Build configuration list for PBXNativeTarget "TruthPillsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844EB9641911511E00DF271F /* Debug */,
+				844EB9651911511E00DF271F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844EB9201911511E00DF271F /* Project object */;
+}
