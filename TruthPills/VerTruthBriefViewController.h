@@ -12,9 +12,14 @@
 @interface VerTruthBriefViewController : UIViewController{
     
     IBOutlet UIButton *btnCrearPillBrief;
-    
+    IBOutlet UIImageView *pill_image;
+    IBOutlet UILabel *label_favorito;
+    IBOutlet UIToolbar *uiToolbar;
+    IBOutlet UIButton *btn_crearPill;
     
 }
+
+
 
 
 @end

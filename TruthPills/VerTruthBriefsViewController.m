@@ -1,45 +1,42 @@
 //
-//  VerPillsViewController.m
+//  VerTruthBriefsViewController.m
 //  TruthPills
 //
-//  Created by Hector Alvarado on 2/6/14.
-//  Copyright (c) 2014 Hector Alvarado. All rights reserved.
+//  Created by Jota Gomez on 06/05/14.
+//  Copyright (c) 2014 Celmedia. All rights reserved.
 //
 
-#import "VerPillsViewController.h"
+#import "VerTruthBriefsViewController.h"
 #import "Pill.h"
 
-@interface VerPillsViewController ()
-- (void)showActionSheet:(id)sender;
 
+@interface VerTruthBriefsViewController ()
+- (void)showActionSheet:(id)sender;
 @end
 
 
-@implementation VerPillsViewController
+@implementation VerTruthBriefsViewController
+    NSMutableArray *listaPills;
 
-
-NSMutableArray *listaPills;
-
-CGRect screenRect ;
-CGFloat screenWidth ;
-CGFloat screenHeight ;
-
+    CGRect screenRect ;
+    CGFloat screenWidth ;
+    CGFloat screenHeight ;
 
 
 - (void)showActionSheet:(id)sender{
-  
+    
     /// inicializa el arreglo de botones
     NSMutableArray *listaBotones = [[NSMutableArray alloc] init];
-
+    
     
     /// inicializa el menu inferior
     self.aac  = [[UIActionSheet alloc] initWithTitle:nil
-                                                              delegate:self 
-                                                     cancelButtonTitle:nil
-                                                destructiveButtonTitle:nil
-                                                     otherButtonTitles:nil];
+                                            delegate:self
+                                   cancelButtonTitle:nil
+                              destructiveButtonTitle:nil
+                                   otherButtonTitles:nil];
     
-    //// crea los botones 
+    //// crea los botones
     UIButton *menu_btn = [UIButton buttonWithType: UIButtonTypeCustom];
     UIButton *truth_brief_btn = [UIButton buttonWithType: UIButtonTypeCustom];
     UIButton *misTruthBrief_btn = [UIButton buttonWithType: UIButtonTypeCustom];
@@ -49,7 +46,7 @@ CGFloat screenHeight ;
     UIButton *crearPillBrief_btn = [UIButton buttonWithType: UIButtonTypeCustom];
     UIButton *micuenta_btn = [UIButton buttonWithType: UIButtonTypeCustom];
     
-    /// se setea el texto 
+    /// se setea el texto
     [menu_btn setTitle:@"" forState:UIControlStateNormal];
     [truth_brief_btn setTitle:@"Thruth Brief" forState:UIControlStateNormal];
     [misTruthBrief_btn setTitle:@"Mis Thruth Brief" forState:UIControlStateNormal];
@@ -67,15 +64,15 @@ CGFloat screenHeight ;
     [listaBotones addObject:estudios_btn];
     [listaBotones addObject:crearPillBrief_btn];
     [listaBotones addObject:micuenta_btn];
-            
+    
     NSUInteger index = 0;
     for (UIButton *button in listaBotones) {
         [button setBackgroundImage:[UIImage imageNamed:@"btn_bg_menu_pill.png"]forState:UIControlStateNormal];
-
+        
         //// color de border
         [[button layer] setBorderWidth:1.0f];
         [[button layer] setBorderColor:[UIColor colorWithRed:215/255.0 green:212/255.0 blue:212/255.0 alpha:1.0f].CGColor];
-      
+        
         //// tamano del boton
         button.frame = CGRectMake(0, (screenHeight / 8.4 ) *  index , screenWidth,  screenHeight / 8.4);
         
@@ -87,7 +84,7 @@ CGFloat screenHeight ;
         button.contentEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
         
         /// acciones del boton
-      ///  [button addTarget:self action:@selector(actionSheet:)    forControlEvents:UIControlEventTouchUpInside];
+        ///  [button addTarget:self action:@selector(actionSheet:)    forControlEvents:UIControlEventTouchUpInside];
         index++;
     }
     
@@ -116,7 +113,7 @@ CGFloat screenHeight ;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-
+    
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     
     if  ([buttonTitle isEqualToString:@"Destructive Button"]) {
@@ -143,27 +140,27 @@ CGFloat screenHeight ;
     if (self) {
         // Custom initialization
     }
-    
     return self;
 }
 
 - (void)viewDidLoad
 {
-     [super viewDidLoad];
-     	 
-  
-     screenRect = self.view.frame; 
-     screenWidth = screenRect.size.width;
-     screenHeight = screenRect.size.height;
-    
-     listaPills =  [[NSMutableArray alloc] init];
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
     
     
-      NSLog(@"My view's frame is: %@", NSStringFromCGRect(self.view.frame));
-
-
+    screenRect = self.view.frame;
+    screenWidth = screenRect.size.width;
+    screenHeight = screenRect.size.height;
     
-    UIImage *image = [UIImage imageNamed:@"iconPill.png"];    
+    listaPills =  [[NSMutableArray alloc] init];
+    
+    
+    NSLog(@"My view's frame is: %@", NSStringFromCGRect(self.view.frame));
+    
+    
+    
+    UIImage *image = [UIImage imageNamed:@"iconPill.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage: [image stretchableImageWithLeftCapWidth:7.0 topCapHeight:0.0] forState:UIControlStateNormal];
     button.frame= CGRectMake(10,15, 50, 40);
@@ -182,125 +179,37 @@ CGFloat screenHeight ;
     UIBarButtonItem *btn_buscar = [[UIBarButtonItem alloc] initWithCustomView:v_buscar];
     
     [[[self navigationController] navigationBar] setTintColor:[UIColor blackColor]];
-
+    
     self.navigationController.navigationBar.topItem.title = @"Truth Brief";
-
+    
     
     self.navigationItem.rightBarButtonItem = btn_buscar;
     self.navigationItem.leftBarButtonItem = btn_logo;
     
-    [self cargarImagenes];
+    //[self cargarImagenes];
     
     /* boton de submenu   */
     UIButton *button_menu = [UIButton buttonWithType:UIButtonTypeCustom];
-     button_menu.frame = CGRectMake(0, screenHeight - 100, screenWidth , (screenHeight / 8.5) + 5 );
+    //button_menu.frame = CGRectMake(0, screenHeight - 100, screenWidth , (screenHeight / 8.5) + 5 );
+    button_menu.frame = CGRectMake(22,  -23, 24 , 25 );
+    
+    
     [button_menu setBackgroundImage:[UIImage imageNamed:@"btn_menu_open_pill.png"]forState:UIControlStateNormal];
     [button_menu addTarget:self action:@selector(showActionSheet:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button_menu];
- 
+
+    
+    
 }
-
-
-
-
--(void) cargarImagenes{
-
-    
-
-    NSString *str=@"http://192.168.0.133/Pills/web/app_dev.php/remote/mostrar/pills";
-    //NSString *str=@"http://truthbrief.com/app/web/remote/mostrar/pills";
-    
-     NSURL *url=[NSURL URLWithString:str];
-     NSData *data=[NSData dataWithContentsOfURL:url];
-     NSError *error=nil;
-     id response=[NSJSONSerialization JSONObjectWithData:data options:
-     NSJSONReadingMutableContainers error:&error];
-     
-     if (!response) {
-     NSLog(@"Error parsing JSON: %@", error);
-     } else {
-     for(NSDictionary *item in response ) {
-   
-   //      NSString *pillImageUrl  = [@"http://truthbrief.com/app/web/uploads/pills/" stringByAppendingString:  [item  valueForKey:@"imagen"]  ];
-         NSString *pillImageUrl  = [@"http://192.168.0.133/Pills/web/uploads/pills/" stringByAppendingString:  [item  valueForKey:@"imagen"]  ];
-         
-         NSURL * imageURL = [NSURL URLWithString:pillImageUrl ];
-         NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
-         UIImage * image = [UIImage imageWithData:imageData];
-
-         
-         Pill *pill = [[Pill alloc] init];
-         [pill setCodigo:  [item  valueForKey:@"codigo"]];
-         [pill setImagen_name:  [item  valueForKey:@"imagen"]];
-         [pill setCantidad_favoritos: @"0" ];
-         [pill setImagen: image];
-         
-         [listaPills addObject:pill];
-         
-         
-         NSLog(@"Item: %@", pillImageUrl);
-    
-        }
-     }
-}
-
-
-
 
 
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
-}
-
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return listaPills.count;
-}
-
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"Cell";
-    
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-    
-    UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
-
-    Pill *pill = [listaPills objectAtIndex:indexPath.row];
-    recipeImageView.image = pill.imagen;
-
-    //// asociacion del evento de touch en la imagen
-    PillUITapGestureRecognizer *tapRecognizer;
-    [recipeImageView setTag:0]; //Pay attention here!, Tag is used to distinguish between your UIImageView on the selector
-    [recipeImageView setUserInteractionEnabled:TRUE];
-    tapRecognizer.codigoPill= @"asdsd";
-    tapRecognizer = [[PillUITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewDidTapped:)] ;
- 
-    tapRecognizer.numberOfTapsRequired = 1;
-    [recipeImageView addGestureRecognizer:tapRecognizer];
-    
-    return cell;
-}
-
-
-
-
-- (void)imageViewDidTapped:(PillUITapGestureRecognizer *)aGesture {
-    UITapGestureRecognizer *tapGesture = (PillUITapGestureRecognizer *)aGesture;
-    
-    ////UIImageView *tappedImageView = (UIImageView *)[tapGesture view];
-    
-    
-    MostrarPillViewController *secondViewController =
-    [self.storyboard instantiateViewControllerWithIdentifier:@"mostrarPillController"];
-    [self.navigationController pushViewController:secondViewController animated:YES];
-    
-    
     
 }
+
 
 
 @end

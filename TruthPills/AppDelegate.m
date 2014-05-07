@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,13 +17,24 @@
     // Override point for customization after application launch.
     
     
+    //[[UINavigationBar appearance] setTintColor:UIColorFromRGB(0xd6cec3)];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:YES];
     
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigation_bar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundColor: UIColorFromRGB(0xd6cec3)];
+
     
-    [[UINavigationBar appearance] setTitleTextAttributes:
+    
+     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
-      [UIColor colorWithRed:113/250 green:111/250 blue:113/250 alpha:1], UITextAttributeTextColor,
-      [UIFont fontWithName:@"Raleway" size:22.0  ], UITextAttributeFont,nil]];
+      [UIColor colorWithRed:113/250 green:111/250 blue:113/250 alpha:1],
+        UITextAttributeTextColor,
+        [UIFont fontWithName:@"Raleway" size:20.0],
+        UITextAttributeFont, nil]];
+    
+    
+    
+    
     
     return YES;
 }
